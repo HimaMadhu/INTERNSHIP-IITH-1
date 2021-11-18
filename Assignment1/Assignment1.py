@@ -44,10 +44,8 @@ for i in S:
   plt.plot(x_FP[0,:],x_FP[1,:],label= labels[j])
   j = j + 1
   plt.plot(P1[0], P1[1], 'o')
-  # plt.text(P1[0] * (1 - 0.1), P1[1] * (1 + 0.1), 'A')
   plt.text(P1[0] * (1 - 0.1), P1[1] * (1 - 0.5), '({}, {})'.format(P1[0], P1[1]))
   plt.plot(P2[0], P2[1], 'o')
-  # plt.text(P2[0] * (1 - 0.1), P2[1] * (1 + 0.1), 'B')
   plt.text(P2[0] * (1 - 0.2), P2[1] * (1 + 0.2), '({}, {})'.format(P2[0], P2[1]))
 
 plt.grid()
@@ -57,15 +55,14 @@ plt.legend(loc='lower left')
 plt.axis('equal')
 plt.show()
 
-x = np.linspace(-5,11,25)
+x = np.linspace(-5,11,1000)
 y = []
-# the function, which is y = x^2 here
 for p in range(len(x)):
   y1 = P.subs(x1,x[p])
   y.append(y1)
 
-# fig = plt.figure()
-# ax = fig.add_subplot(1, 1, 1)
+fig = plt.figure()
+ax = fig.add_subplot(1, 1, 1)
 plt.grid()
 ax.spines['left'].set_position('center')
 ax.spines['bottom'].set_position('zero')
@@ -76,7 +73,12 @@ ax.yaxis.set_ticks_position('left')
 plt.xlabel('$x$')
 plt.ylabel('$y$')
 plt.legend(loc='lower left')
-# plot the function
+j = 0
+for i in S:
+  P1 = np.array([i,2])
+  j = j + 1
+  plt.plot(P1[0], 0, 'o')
+  plt.text(P1[0] * (1 - 0.1), P1[1] * (1 - 0.5), '({}, {})'.format(P1[0], 0))
 plt.plot(x,y, 'r',label='y(x)')
 
 # show the plot
