@@ -138,7 +138,7 @@ columns=fullflexible
      \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 \vspace{3cm}
 \title{Assignment 1}
-\author{Hruday Beeravelli}
+\author{Hima M}
 \maketitle
 \newpage
 %\tableofcontents
@@ -148,56 +148,65 @@ columns=fullflexible
 Find Python Codes from below link 
 %
 \begin{lstlisting}
-https://github.com/Hruday-Beeravelli/INTERNSHIP-IITH-1/blob/main/Assignment1/Assignment1.py
+https://github.com/HimaMadhu/internship/blob/main/Assignment1/Assignment1.py
 \end{lstlisting}
 %
 and latex-tikz codes from 
 %
 \begin{lstlisting}
-https://github.com/Hruday-Beeravelli/INTERNSHIP-IITH-1/blob/main/Assignment1/Assignment1.tex
+https://github.com/HimaMadhu/internship/blob/main/assignment1/assignment%201.tex
 \end{lstlisting}
 %
 
 \section{Examples 1}
 % \subsection{Question 1}
-\subsection{Question 7}
-% \renewcommand{\theequation}{\theenumi}
-\item 
 \numberwithin{equation}
-Find the distance between the following pairs of points
+\subsection{Question 1}
+% \renewcommand{\theequation}{\theenumi}
+\item
+Find the value of $x_1$ if the distance between the points ($x_1$, 2)
+and (3, 4) be 8
 \begin{align}
-\myvec{am_1^2\\2am_1}, \myvec{am_2^2\\2am_2}
+\myvec{x_1\\2}, \myvec{3\\4} \label{eq:1}
 \end{align}
 \subsection{Solution}
 % \renewcommand{\theequation}{\theenumi}
 % \begin{enumerate}[label=\arabic*.,ref=\thesubsubsection.\theenumi]
 % \numberwithin{equation}{enumi}
-\item The distance between two vectors is given by 
+\item
+The distance between two vectors is given by 
 \begin{align}
-\norm{\vec{A}-\vec{B}}=\sqrt{\myvec{\vec{A}-\vec{B}}^
-\intercal .\myvec{\vec{A}-\vec{B}}}
+\norm{\vec{A}-\vec{B}}=\sqrt{\myvec{\vec{A}-\vec{B}}^\intercal \myvec{\vec{A}-\vec{B}}} \label{eq:1.1}
 \end{align}
-% From \eqref{eq:2},
+Let
 \begin{align}
-&=\norm{\myvec{am_1^2\\2am_1}-\myvec{am_2^2\\2am_2}}
+\vec{A}&=\myvec{x_1\\2}, \vec{B}=\myvec{3\\4} \nonumber    
 \end{align}
+
 \begin{align}
-&=\norm{\myvec{am_1^2-am_2^2\\2am_1-2am_2}}\end{align}
-\begin{align}
-&=\sqrt{\myvec{am_1^2-am_2^2\\2am_1-2am_2}^
-\intercal\myvec{am_1^2-am_2^2\\2am_1-2am_2}}
+\\\vec{A-B}&=\myvec{x_1-3\\-2}  %\label{eq:1}
 \end{align}
+Given the distance between $\vec{A}$ and $\vec{B}$ is 8
+\\From \eqref{eq:1.1} & \eqref{eq:1}
 \begin{align}
-&=\sqrt{\myvec{am_1^2-am_2^2 & 2am_1-2am_2}\myvec{am_1^2-am_2^2\\2am_1-2am_2}}
-\end{align}
-\begin{align}
-&=\sqrt{\myvec{am_1^2-am_2^2}^2+\myvec{2am_1-2am_2}^2}\label{eq2}
+\norm{\myvec{x_1-3\\-2}} &=8 \label{eq2}
 \end{align}
 \begin{align}
-&=a\sqrt{\myvec{m_1^2-m_2^2}^2+4\myvec{m_1-m_2}^2}
+\sqrt{\myvec{x_1-3\\-2}^\intercal\myvec{x_1-3\\-2}}&=8
 \end{align}
-Distance between $(am_1^2,2am_1)$ and $(am_2^2,2am_2)$ is
 \begin{align}
-&=a\sqrt{\myvec{m_1^2-m_2^2}^2+4\myvec{m_1-m_2}^2}
+\sqrt{\myvec{x_1-3&&-2}\myvec{x_1-3\\-2}}&=8
 \end{align}
+\begin{align}
+\sqrt{\myvec{x_1-3}^2+\myvec{-2}^2}&=8
+\end{align}
+\begin{figure}[!ht]
+\includegraphics[width=\columnwidth]{Assignment_1.jpeg} \label{fig:image1}
+\caption{}
+\end{figure}
+\begin{figure}[!ht]
+\includegraphics[width=\columnwidth]{parabola.png} \label{fig:image1}
+\caption{Quadratic equation plot}
+% \label{fig2}
+\end{figure}
 \end{document}
