@@ -164,7 +164,7 @@ Find the area of the triangle the coordinates of whose angular points are respec
 \subsection{Solution}
 Area of a triangle whose vertex point vectors are $\vec{A},\vec{B}$ and $\vec{C}$ is given by
 \begin{align}
-Area(\vec{A},\vec{B},\vec{C})&= \frac{1}{2}\mydet{{\vec{A}-\vec{B}&\vec{A}-\vec{C}}}
+Area(\vec{A},\vec{B},\vec{C})&= \left| \frac{1}{2}\mydet{{\vec{A}-\vec{B}&\vec{A}-\vec{C}}} \right|
 \label{eq1}
 \end{align}
 Let $\vec{A}=\myvec{a\\b+c}, \vec{B}=\myvec{a\\b-c}, \vec{C}=\myvec{-a\\c}$
@@ -176,11 +176,12 @@ Let $\vec{A}=\myvec{a\\b+c}, \vec{B}=\myvec{a\\b-c}, \vec{C}=\myvec{-a\\c}$
 \end{align}
 From \eqref{eq1} area of the triangle is
 \begin{align}
-&=\frac{1}{2}\mydet{0&2a\\2c&b}\\
-&=\frac{1}{2}\left[\myvec{0\times b}-\myvec{2a\times 2c}\right]\\
-&=\frac{1}{2}\myvec{0-4ac}\\
-&=-2ac
+&=\left|\frac{1}{2}\mydet{0&2a\\2c&b}\right|\\
+&=\left|\frac{1}{2}\left[\myvec{0\times b}-\myvec{2a\times 2c}\right]\right|\\
+&=\left|\frac{1}{2}\myvec{0-4ac}\right|\\
+&=\left|-2ac\right|
+\\&=2ac
 \end{align}
-Area of the Triangle formed by $(a,b+c), (a,b-c)$ and $(-a,c)$ points is $-2ac$
+Area of the Triangle formed by $(a,b+c), (a,b-c)$ and $(-a,c)$ points is $2ac$
 \end{enumerate}
 \end{document}
